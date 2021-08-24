@@ -1,5 +1,30 @@
 body {
     background-color: #fffbf7;
+    margin: 0px;
+}
+
+.header{
+    margin: 40 px 80px;
+    background-color: #D34F87;
+}
+
+.bar{
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #D34F87;
+    color: #ffffff;
+}
+
+.pedidos{
+    background-color: #D34F87;
+    color: #ffffff;
+}
+
+.sesion{
+    background-color: #D34F87;
+    color: #ffffff;
 }
 
 h1 {
@@ -8,9 +33,10 @@ h1 {
     font-size: 40px;
     margin-bottom: 24px;
     font-weight: 900;
+    margin: 24px 30px 24px 40px; <!-- Que el texto se vea un poco más dentro de la página -->
 }
 
-button {
-    background-color: #D34F87;
-    color: #ffffff;
+.imgpma
+{
+    padding: 0px 25px 25px 50px;
 }
