@@ -1,3 +1,4 @@
+/* Selectores {} body*/
 body {
     background-color: #fffbf7;
     margin: 0px;
@@ -6,6 +7,16 @@ body {
 .header{
     margin: 40 px 80px;
     background-color: #D34F87;
+    font-size: 0px; /*Para que quede alineado y sin espacios entre cada width de la barra de navegación | Para que los elementos queden alineados en la misma linea (logo, navbar, acciones)*/
+    height: 45px;
+    font-family:'Times New Roman';
+    padding: 7px;
+}
+
+/* Todos los desendientes de cabecera tienen display en linea */
+.header > * {
+    display: inline-block;
+    font-size: 16px; /*Que se vea el texto*/
 }
 
 .bar{
@@ -39,4 +50,50 @@ h1 {
 .imgpma
 {
     padding: 0px 25px 25px 50px;
+}
+
+.imgmda
+{
+    padding: 0px 25px 25px 10px;
+}
+
+.imgfa
+{
+    padding: 0px 25px 25px 10px;
+}
+
+.imgsd
+{
+    padding: 0px 25px 25px 10px;
+}
+
+.logo{
+    width: 20%;
+}
+
+.navbar{
+    width: 50%;
+    text-align: center; /*Centrar barra de navegación*/
+}
+
+
+.actions1{
+    width: 10%;
+    text-align: center;
+}
+
+.actions2{
+    width: 10%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.actions3{
+    width: 10%;
+    text-align: center;
+}
+
+main {
+    margin-top: 5px;
+    text-align:left;
 }
