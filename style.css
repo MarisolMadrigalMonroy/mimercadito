@@ -5,10 +5,10 @@ body {
 }
 
 .header{
-    margin: 40 px 80px;
+    margin: 0 0 80px 0;
     background-color: #D34F87;
     font-size: 0px; /*Para que quede alineado y sin espacios entre cada width de la barra de navegación | Para que los elementos queden alineados en la misma linea (logo, navbar, acciones)*/
-    height: 45px;
+    height: 60px;
     font-family:'Times New Roman';
     padding: 7px;
 }
@@ -19,21 +19,8 @@ body {
     font-size: 16px; /*Que se vea el texto*/
 }
 
-.bar{
-    background-color: #ffffff;
-}
 
 button {
-    background-color: #D34F87;
-    color: #ffffff;
-}
-
-.pedidos{
-    background-color: #D34F87;
-    color: #ffffff;
-}
-
-.sesion{
     background-color: #D34F87;
     color: #ffffff;
 }
@@ -44,7 +31,7 @@ h1 {
     font-size: 40px;
     margin-bottom: 24px;
     font-weight: 900;
-    margin: 24px 30px 24px 40px; <!-- Que el texto se vea un poco más dentro de la página -->
+    margin: 24px 30px 24px 40px; /*<!-- Que el texto se vea un poco más dentro de la página -->*/
 }
 
 .imgpma
@@ -76,22 +63,41 @@ h1 {
     text-align: center; /*Centrar barra de navegación*/
 }
 
-
-.actions1{
-    width: 10%;
-    text-align: center;
+.bar{
+    background-color: #ffffff;
+    padding: 2px 200px;
 }
 
-.actions2{
-    width: 10%;
+.actions{
+    width: 30%;
     text-align: center;
     font-size: 14px;
 }
 
-.actions3{
-    width: 10%;
-    text-align: center;
+.actions > *{
+    display: inline-block;
+    margin: 0 10px;
 }
+
+.actionPedir{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.actionSesion{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.actions > button
+{
+    background-color: #D34F87;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 5px;
+
+}
+
 
 main {
     margin-top: 5px;
