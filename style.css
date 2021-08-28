@@ -5,119 +5,6 @@ body {
     padding: 0;
 }
 
-.logo{
-    width: 25%;
-    justify-content: left;
-}
-
-/*
-body{
-    background-color: #D34F87;
-    margin: 0;
-    padding: 0;
-}
-
-.logo{
-    width: 20%;
-    justify-content: left;
-}
-
-.navbar{
-    max-width: 400px;
-    width:100%;
-}
-
-.navbar .busqueda{
-    position: relative;
-    height: 50px;
-    max-width: 50px;
-    margin: auto;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    transition: all 0.3s ease;
-}
-
-#check:checked ~ .busqueda{
-    max-width: 380px;
-}
-
-.busqueda input{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    background: #D34F87;
-    outline: none;
-    border: none;
-    padding-left: 20px;
-    font-size: 18px;
-}
-
-.navbar .lupita
-{
-    position: absolute;
-    right: -2px;
-    top: 0;
-    width: 50px;
-    background: #D34F87;
-    height: 100%;
-    text-align: center;
-    line-height: 50px;
-    color: #ffffff;
-    font-size: 20px;
-    border-radius: 25px;
-}
-
-#check:checked ~ .navbar .lupita{
-    background: #ffffff;
-    color: #D34F87;
-    width: 60px;
-    border-radius: 0 25px 25px 0;
-}
-
-#check{
-    display: none;
-}*/
-
-
-.navbar{
-    width: 50%;
-    background: #D34F87;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-    transition: width 0.4s ease-in-out;
-}
-
-.botonLupita{
-    color: #D34F87;
-    float: right; /*float ubica un elemento a la derecha o izquierda de su contenedor*/
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; /*Se hace un circulito*/
-    background: #ffffff;
-    display: flex;
-    justify-content: center; /*centra a la lupita en su cuadrito/circulito*/
-    align-items: center; /*aling es para lo vertical, hace que se centre en lo vertical*/
-}
-
-.textoBusqueda{
-    border: none; /*quita los bordecitos que se veían como grisecitos*/
-    background: none; /*Era una barrita con fondo blanco para buscar y lo quité*/
-    outline:none; /*Le quita los contornos a la cajita*/
-    float:left;
-    padding:0;
-    color:white;
-    font-size:16px;
-    font-family: 'Lobster';
-    transition: 0.4s; /*La cantidad de tiempo que tarda la transición de una animación*/
-    line-height: 40px;
-    width:90%;
-}
-
-
-
-
 .header{
     display: flex;
     align-items: center;
@@ -139,25 +26,67 @@ body{
     vertical-align: center;
 }
 
+.header .icon {
+    display: none; /*Por default el burguer icon no está okr*/
+  }
 
-button {
-    background-color: #D34F87;
+@media screen and (max-width: 1200px) { /*Cuando se hace más pequeño que esto se muestra el burguer y se ocultan las etiquetas*/
+    .header > * {display: flex;}
+    .header .actions > * {display: none;}
+    .mynavbar
+    {
+        width: 100%;
+    }
+    .header a.icon
+    {
+        float: right;
+        display: block;
+    }
+  }
+
+.logo{
+    width: 25%;
+    justify-content: left;
 }
 
-
-
-/*
-.navbar{
+.mynavbar{
     width: 50%;
-    text-align: center; /*Centrar barra de navegación
-}*/
-/*
-.bar{
-    background-color: #ffffff;
-    margin-right: -4.5px; /*Los margenes se pueden hacer negativos | La lupa está más cerca de la barra
-    padding: 2px 200px;
-}*/
+    background: #D34F87;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    transition: width 0.4s ease-in-out;
+}
 
+.textoBusqueda{
+    border: none; /*quita los bordecitos que se veían como grisecitos*/
+    background: none; /*Era una barrita con fondo blanco para buscar y lo quité*/
+    outline:none; /*Le quita los contornos a la cajita*/
+    float:left;
+    padding:0;
+    color:white;
+    font-size:16px;
+    font-family: 'Lobster';
+    transition: 0.4s; /*La cantidad de tiempo que tarda la transición de una animación*/
+    line-height: 40px;
+    width:90%;
+}
+
+.botonLupita{
+    color: #D34F87;
+    float: right; /*float ubica un elemento a la derecha o izquierda de su contenedor*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /*Se hace un circulito*/
+    background: #ffffff;
+    display: flex;
+    justify-content: center; /*centra a la lupita en su cuadrito/circulito*/
+    align-items: center; /*aling es para lo vertical, hace que se centre en lo vertical*/
+}
+
+.compras {
+    background-color: #D34F87;
+}
 
 .actions{
     width: 30%;
@@ -174,7 +103,7 @@ button {
     font-size: 20px;
 }
 
-.actions > button
+.actions .compras
 {
     background-color: #D34F87;
     border: 0;
@@ -204,26 +133,50 @@ main {
     justify-content: space-around;
 }
 
-
 .mercaditos >*
 {
     border-radius: 12.5%;
 }
 
-.header .icon {
-    display: none;
-  }
+.carrusel >* button
+{
+    padding-top: 6.5em;
+}
 
-@media screen and (max-width: 1200px) {
-    .header > * {display: flex;}
-    .header .actions > * {display: none;}
-    .navbar
-    {
-        width: 100%;
-    }
-    .header a.icon
-    {
-        float: right;
-        display: block;
-    }
-  }
+.carrusel > * img{
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+/*
+
+.carrusel >* button
+{
+    height: 100%;
+    width: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+*/
+
+/*
+.carrusel button
+{
+    /*padding-top: 50px;
+    align-items: center;
+}
+
+.carrusel > button
+
+    align-items: center;{
+    vertical-align: center;
+    justify-content: center;
+}*/
