@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d6ad3bbca.js" crossorigin="anonymous"></script> <!--Usando un icon de font awesome-->
     <title>
         mimercadito
     </title>
@@ -16,17 +18,35 @@
     <header class="header">
         <!--Logo con link de navegación-->
         <a href="https://dreamy-snyder-d4ef15.netlify.app/" class = "logo">
-            <img src="logoMiMercadito.PNG" alt="Logo de mimercadito">
+            <img src="logoMiMercadito.PNG" alt="Logo de mimercadito" width=20%>
         </a>
         <!--Menú de navegación-->
+<!--
+        <div class = "navbar">
+            <input tupe="checkbox" id="ckeck">
+            <div class = "busqueda">
+                <input type="text" placeholder = "¿Qué estás buscando?">
+                <label for="check" class="lupita">
+                    <i class="fab fa-searchengin"></i>
+                </label>
+            </div>
+        </div>
+-->
         <nav class = "navbar">
+            <input class = "textoBusqueda" placeholder="¿Qué estás buscando?" type="search" name=""/> <!--Mi cajita de texto debe tener un nombre ya que con ese nombre java script sacará la información de ahí-->
+            <a class="botonLupita" href= "#">
+                <i class="fab fa-searchengin"></i>
+            </a>
+        </nav>
+
+        <!-- <nav class = "navbar">
             <form>
                 <input class="bar" placeholder="¿Qué estás buscando?" type="search"/>
                 <button type="submit">
                     &#128269;
                 </button>
             </form>
-        </nav>
+        </nav> -->
         <!--Contenedor de acciones-->
         <div class="actions">
             <a class="actionPedir" href =""> Pedidos</a>
@@ -35,20 +55,14 @@
         </div>
     </header>
 
-    <main>
+    <main class = "principal">
         <h1>Selecciona tu mercadito: </h1>
-        <a href="<!--Aquí va el link a donde nos va a llevar-->" >
-            <img class="imgpma" src="mercadoPresidenteMiguelAleman.PNG" alt="Imagen de mercado Presidente Miguel Alemán">
-        </a>
-        <a href="<!--Aquí va el link a donde nos va a llevar-->" >
-            <img class="imgmda" src="mercadoDeAbastos.PNG" alt="Imagen de mercado de Abastos">
-        </a>
-        <a href="<!--Aquí va el link a donde nos va a llevar-->" >
-            <img class="imgfa" src="mercadoFelipeAngeles.PNG" alt="Imagen de mercado Felipe Angeles">
-        </a>
-        <a href="<!--Aquí va el link a donde nos va a llevar-->" >
-            <img class="imgsd" src="mercadoSeveroDiaz.PNG" alt="Imagen de mercado Severo Diaz">
-        </a>
+        <section class="mercaditos">
+            <img  src="mercadoPresidenteMiguelAleman.PNG" alt="Imagen de mercado Presidente Miguel Alemán">
+            <img  src="mercadoDeAbastos.PNG" alt="Imagen de mercado de Abastos">
+            <img  src="mercadoFelipeAngeles.PNG" alt="Imagen de mercado Felipe Angeles">
+            <img  src="mercadoSeveroDiaz.PNG" alt="Imagen de mercado Severo Diaz">
+        </section>
     </main>
 
 </body>

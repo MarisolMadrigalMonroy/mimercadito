@@ -1,105 +1,208 @@
 /* Selectores {} body*/
 body {
-    background-color: #fffbf7;
-    margin: 0px;
+    background-color: #D34F87;
+    margin: 0;
+    padding: 0;
 }
 
-.header{
-    margin: 0 0 80px 0;
+.logo{
+    width: 25%;
+    justify-content: left;
+}
+
+/*
+body{
     background-color: #D34F87;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 20%;
+    justify-content: left;
+}
+
+.navbar{
+    max-width: 400px;
+    width:100%;
+}
+
+.navbar .busqueda{
+    position: relative;
+    height: 50px;
+    max-width: 50px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#check:checked ~ .busqueda{
+    max-width: 380px;
+}
+
+.busqueda input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #D34F87;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.navbar .lupita
+{
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: #D34F87;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+#check:checked ~ .navbar .lupita{
+    background: #ffffff;
+    color: #D34F87;
+    width: 60px;
+    border-radius: 0 25px 25px 0;
+}
+
+#check{
+    display: none;
+}*/
+
+
+.navbar{
+    width: 50%;
+    background: #D34F87;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.botonLupita{
+    color: #D34F87;
+    float: right; /*float ubica un elemento a la derecha o izquierda de su contenedor*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /*Se hace un circulito*/
+    background: #ffffff;
+    display: flex;
+    justify-content: center; /*centra a la lupita en su cuadrito/circulito*/
+    align-items: center; /*aling es para lo vertical, hace que se centre en lo vertical*/
+}
+
+.textoBusqueda{
+    border: none; /*quita los bordecitos que se veían como grisecitos*/
+    background: none; /*Era una barrita con fondo blanco para buscar y lo quité*/
+    outline:none; /*Le quita los contornos a la cajita*/
+    float:left;
+    padding:0;
+    color:white;
+    font-size:16px;
+    font-family: 'Lobster';
+    transition: 0.4s; /*La cantidad de tiempo que tarda la transición de una animación*/
+    line-height: 40px;
+    width:90%;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    margin: 0 0 3.50rem 0;
+    background-color: #ffffff;
     font-size: 0px; /*Para que quede alineado y sin espacios entre cada width de la barra de navegación | Para que los elementos queden alineados en la misma linea (logo, navbar, acciones)*/
-    height: 60px;
-    font-family:'Times New Roman';
-    padding: 7px;
+    height: 4rem;
+    /*font-family:'Times New Roman';*/
+    padding: 2rem 3rem 3rem 3rem;
+    /*
+    border-style: none none solid none; /*border style | border-left-style: none ...  border-bottom-style: solid
+    border-bottom-color: #D34F87;*/
 }
 
 /* Todos los desendientes de cabecera tienen display en linea */
 .header > * {
     display: inline-block;
     font-size: 16px; /*Que se vea el texto*/
+    vertical-align: center;
 }
 
 
 button {
     background-color: #D34F87;
-    color: #ffffff;
 }
 
-h1 {
-    color: #D34F87;
-    font-family: "PT", serif;
-    font-size: 40px;
-    margin-bottom: 24px;
-    font-weight: 900;
-    margin: 24px 30px 24px 40px; /*<!-- Que el texto se vea un poco más dentro de la página -->*/
-}
 
-.imgpma
-{
-    padding: 0px 25px 25px 50px;
-}
 
-.imgmda
-{
-    padding: 0px 25px 25px 10px;
-}
-
-.imgfa
-{
-    padding: 0px 25px 25px 10px;
-}
-
-.imgsd
-{
-    padding: 0px 25px 25px 10px;
-}
-
-.logo{
-    width: 20%;
-}
-
+/*
 .navbar{
     width: 50%;
-    text-align: center; /*Centrar barra de navegación*/
-}
-
+    text-align: center; /*Centrar barra de navegación
+}*/
+/*
 .bar{
     background-color: #ffffff;
+    margin-right: -4.5px; /*Los margenes se pueden hacer negativos | La lupa está más cerca de la barra
     padding: 2px 200px;
-}
+}*/
+
 
 .actions{
     width: 30%;
-    text-align: center;
+    text-align:right;
     font-size: 14px;
 }
 
 .actions > *{
     display: inline-block;
     margin: 0 10px;
-}
-
-.actionPedir{
-    color: #ffffff;
+    color: #D34F87;
     text-decoration: none;
-}
-
-.actionSesion{
-    color: #ffffff;
-    text-decoration: none;
+    font-family: 'Lobster';
+    font-size: 20px;
 }
 
 .actions > button
 {
     background-color: #D34F87;
-    padding: 12px 14px;
     border: 0;
     border-radius: 5px;
 
 }
 
-
 main {
     margin-top: 5px;
     text-align:left;
+}
+
+.principal > h1{
+    color: #ffffff;
+    font-family: 'Lobster';
+    font-size: 40px;
+    margin-bottom: 24px;
+    font-weight: 900;
+    margin: 24px 30px 24px 40px; /*<!-- Que el texto se vea un poco más dentro de la página -->*/
+}
+
+.mercaditos {
+    padding: 0px 1em 1em .5em;
+    display: flex; /*adecuar el contenido en filas y columnas*/
+    flex-direction: row; /*alinear elementos en una fila*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.mercaditos >*
+{
+    border-radius: 12.5%;
 }
