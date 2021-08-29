@@ -20,34 +20,60 @@
 </head>
 <body>
 
-    <header class="header">
-        <!--Logo con link de navegación-->
-        <a href="https://dreamy-snyder-d4ef15.netlify.app/" class = "logo">
-            <img src="logoMiMercadito.PNG" alt="Logo de mimercadito" width=20%>
-        </a>
-        <!--Menú de navegación-->
-        <nav class = "mynavbar">
-            <input class = "textoBusqueda" placeholder="¿Qué estás buscando?" type="search" name=""/> <!--Mi cajita de texto debe tener un nombre ya que con ese nombre java script sacará la información de ahí-->
-            <a class="botonLupita" href= "#">
-                <i class="fab fa-searchengin"></i>
-            </a>
-        </nav>
-        <!--Contenedor de acciones-->
-        <div class="actions">
-            <a class="actionPedir" href =""> Pedidos</a>
-            <a class="actionSesion" href =""> Iniciar sesión</a>
-            <button class = "compras"type="submit"><img src="emojiBolsa.PNG" alt="emoji de bolsas de compras" /></button>
-        </div>
-        <a class="icon"><i class="fa fa-bars"></i></a>
-    </header>
 
-    <main class = "principal">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <!--Añadiendo logo de mi mercadito-->
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="https://dreamy-snyder-d4ef15.netlify.app">
+                    <img src="logoMiMercadito.png" alt="" width="30" height="24">
+                  </a>
+                </div>
+              </nav>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Pedidos</a>
+              </li>
+              <li class="text-nowrap">
+                <a class="nav-link" href="#">Iniciar sesión</a>
+              </li>
+
+
+
+              <!--Botón de bolsa de compras-->
+              <form class="container-fluid justify-content-start">
+                <button class="btn btn-outline-success me-2" type="button"><i class="fas fa-shopping-bag"></i></button>
+              </form>
+            </ul>
+            <!--Barra de busqueda-->
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fab fa-searchengin"></i></button>
+            </form>
+
+          </div>
+        </div>
+      </nav>
+
+
+
+<main class = "principal">
         <h1>Selecciona tu mercadito: </h1>
         <section class="mercaditos">
-            <img  src="mercadoPresidenteMiguelAleman.PNG" alt="Imagen de mercado Presidente Miguel Alemán">
-            <img  src="mercadoDeAbastos.PNG" alt="Imagen de mercado de Abastos">
-            <img  src="mercadoFelipeAngeles.PNG" alt="Imagen de mercado Felipe Angeles">
-            <img  src="mercadoSeveroDiaz.PNG" alt="Imagen de mercado Severo Diaz">
+            <div class="mercaditos-wrapper">
+                <img  src="mercadoPresidenteMiguelAleman.PNG" alt="Imagen de mercado Presidente Miguel Alemán">
+                <img  src="mercadoDeAbastos.PNG" alt="Imagen de mercado de Abastos">
+                <img  src="mercadoFelipeAngeles.PNG" alt="Imagen de mercado Felipe Angeles">
+                <img  src="mercadoSeveroDiaz.PNG" alt="Imagen de mercado Severo Diaz">
+            </div>
         </section>
 
 
@@ -102,4 +128,3 @@
     </footer>
 </body>
 </html>
-

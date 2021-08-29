@@ -5,112 +5,6 @@ body {
     padding: 0;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    margin: 0 0 3.50rem 0;
-    background-color: #ffffff;
-    font-size: 0px; /*Para que quede alineado y sin espacios entre cada width de la barra de navegación | Para que los elementos queden alineados en la misma linea (logo, navbar, acciones)*/
-    height: 4rem;
-    /*font-family:'Times New Roman';*/
-    padding: 2rem 3rem 3rem 3rem;
-    /*
-    border-style: none none solid none; /*border style | border-left-style: none ...  border-bottom-style: solid
-    border-bottom-color: #D34F87;*/
-}
-
-/* Todos los desendientes de cabecera tienen display en linea */
-.header > * {
-    display: inline-block;
-    font-size: 16px; /*Que se vea el texto*/
-    vertical-align: center;
-}
-
-.header .icon {
-    display: none; /*Por default el burguer icon no está okr*/
-  }
-
-@media screen and (max-width: 1200px) { /*Cuando se hace más pequeño que esto se muestra el burguer y se ocultan las etiquetas*/
-    .header > * {display: flex;}
-    .header .actions > * {display: none;}
-    .mynavbar
-    {
-        width: 100%;
-    }
-    .header a.icon
-    {
-        float: right;
-        display: block;
-    }
-  }
-
-.logo{
-    width: 25%;
-    justify-content: left;
-}
-
-.mynavbar{
-    width: 50%;
-    background: #D34F87;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-    transition: width 0.4s ease-in-out;
-}
-
-.textoBusqueda{
-    border: none; /*quita los bordecitos que se veían como grisecitos*/
-    background: none; /*Era una barrita con fondo blanco para buscar y lo quité*/
-    outline:none; /*Le quita los contornos a la cajita*/
-    float:left;
-    padding:0;
-    color:#ffffff;
-    font-size:16px;
-    font-family: 'Lobster';
-    transition: 0.4s; /*La cantidad de tiempo que tarda la transición de una animación*/
-    line-height: 40px;
-    width:90%;
-}
-
-.botonLupita{
-    color: #D34F87;
-    float: right; /*float ubica un elemento a la derecha o izquierda de su contenedor*/
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; /*Se hace un circulito*/
-    background: #ffffff;
-    display: flex;
-    justify-content: center; /*centra a la lupita en su cuadrito/circulito*/
-    align-items: center; /*aling es para lo vertical, hace que se centre en lo vertical*/
-}
-
-.compras {
-    background-color: #D34F87;
-}
-
-.actions{
-    width: 30%;
-    text-align:right;
-    font-size: 14px;
-}
-
-.actions > *{
-    display: inline-block;
-    margin: 0 10px;
-    color: #D34F87;
-    text-decoration: none;
-    font-family: 'Lobster';
-    font-size: 20px;
-}
-
-.actions .compras
-{
-    background-color: #D34F87;
-    border: 0;
-    border-radius: 5px;
-
-}
-
 main {
     margin-top: 5px;
     padding-bottom: 230px;
@@ -131,19 +25,38 @@ main {
     margin: 0 30px 24px 40px; /*<!-- Que el texto se vea un poco más dentro de la página -->*/
 }
 
+
 .mercaditos {
     padding: 0px 1em 1em .5em;
     display: flex; /*adecuar el contenido en filas y columnas*/
     flex-direction: row; /*alinear elementos en una fila*/
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 2rem; /*dejar espacio entre los mercaditos en el celular*/
 }
 
-.mercaditos >*
-{
-    border-radius: 12.5%;
-}
+
+
+@media screen and (max-width: 1200px) {
+    nav
+    {
+        display: flex;
+    }
+    .mercaditos-wrapper > img {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        border-radius: 12.5%;
+    }
+  }
+
+  .mercaditos-wrapper > img{
+      width: auto;
+      height: auto;
+      padding:20px;
+      border-radius: 12.5%;
+  }
+
 
 .carrusel >* button
 {
@@ -181,7 +94,7 @@ main {
 
 .pie{
     background-color: #595959;
-    padding: 32px;
+    padding: 1em;;
 }
 
 .pie > i{
