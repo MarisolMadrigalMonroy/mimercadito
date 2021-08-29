@@ -1,6 +1,6 @@
 /* Selectores {} body*/
 body {
-    background-color: #D34F87;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -64,7 +64,7 @@ body {
     outline:none; /*Le quita los contornos a la cajita*/
     float:left;
     padding:0;
-    color:white;
+    color:#ffffff;
     font-size:16px;
     font-family: 'Lobster';
     transition: 0.4s; /*La cantidad de tiempo que tarda la transición de una animación*/
@@ -113,8 +113,13 @@ body {
 
 main {
     margin-top: 5px;
+    padding-bottom: 230px;
+    border: 120px;
     text-align:left;
+    background-color: #D34F87;
 }
+
+
 
 .principal > h1{
     color: #ffffff;
@@ -122,7 +127,8 @@ main {
     font-size: 40px;
     margin-bottom: 24px;
     font-weight: 900;
-    margin: 24px 30px 24px 40px; /*<!-- Que el texto se vea un poco más dentro de la página -->*/
+    padding-top: 1em;
+    margin: 0 30px 24px 40px; /*<!-- Que el texto se vea un poco más dentro de la página -->*/
 }
 
 .mercaditos {
@@ -131,6 +137,7 @@ main {
     flex-direction: row; /*alinear elementos en una fila*/
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 2rem; /*dejar espacio entre los mercaditos en el celular*/
 }
 
 .mercaditos >*
@@ -140,43 +147,44 @@ main {
 
 .carrusel >* button
 {
-    padding-top: 6.5em;
+    padding-top: 13.5em; /*hace arriba o abajo los picoparentesis, simbolos iluminatis, icon prev y next*/
+    padding-right:20px;
+    padding-left:20px;
 }
 
 .carrusel > * img{
     border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-
-/*
-
-.carrusel >* button
-{
-    height: 100%;
-    width: 5%;
-    align-items: center;
-    justify-content: center;
+.carrusel >* img{
+    margin-top: 110px;
 }
 
-*/
-
-/*
-.carrusel button
-{
-    /*padding-top: 50px;
-    align-items: center;
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23595959' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-.carrusel > button
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23595959' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
 
-    align-items: center;{
-    vertical-align: center;
-    justify-content: center;
-}*/
+.colaboradores > h4{
+    color: #D34F87;
+    font-family: 'Lobster';
+    font-size: 30px;
+    /*margin-bottom: 24px;*/
+    font-weight: 900; /*El grueso de la fuente*/
+    text-align: center;
+    margin: 100px 0;
+}
+
+
+.pie{
+    background-color: #595959;
+    padding: 32px;
+}
+
+.pie > i{
+    color: #D34F87;
+    width: 10%;
+}
