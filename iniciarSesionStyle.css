@@ -1,0 +1,51 @@
+/* Selectores {} body*/
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 40px 0;
+    border: 120px;
+    text-align:left;
+    background-color: #D34F87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.principal .box
+{
+    width:fit-content;
+
+}
+
+.titulo{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #D34F87;
+    font-family: 'Lobster';
+    font-size: 32px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal .mb-3
+{
+    justify-content: center;
+}
+
+.pie{
+    background-color: #595959;
+    padding: 1em;;
+}
+
+.pie > i{
+    color: #D34F87;
+    width: 10%;
+}
