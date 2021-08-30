@@ -6,7 +6,6 @@ body {
 }
 
 main {
-    margin-top: 5px;
     padding-bottom: 230px;
     border: 120px;
     text-align:left;
@@ -26,7 +25,7 @@ main {
 }
 
 
-.mercaditos {
+.mercaditos{
     padding: 0px 1em 1em .5em;
     display: flex; /*adecuar el contenido en filas y columnas*/
     flex-direction: row; /*alinear elementos en una fila*/
@@ -42,7 +41,7 @@ main {
     {
         display: flex;
     }
-    .mercaditos-wrapper > img {
+    .mercaditos-wrapper > a > img{
         width: auto;
         height: auto;
         padding: 10px;
@@ -50,7 +49,7 @@ main {
     }
   }
 
-  .mercaditos-wrapper > img{
+  .mercaditos-wrapper > a > img{
       width: auto;
       height: auto;
       padding:20px;
@@ -94,11 +93,13 @@ main {
 
 .pie{
     background-color: #595959;
-    padding: 1em;;
+    padding: 1em;
 }
 
-.pie > i{
+.pie > *{
     color: #D34F87;
-    width: 10%;
 }
 
+.pie > a > i{
+    width:20%;
+}
