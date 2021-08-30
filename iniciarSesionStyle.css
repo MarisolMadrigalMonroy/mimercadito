@@ -7,24 +7,30 @@ body {
 
 main {
     padding: 40px 0;
-    border: 120px;
+    border: 300px;
     text-align:left;
     background-color: #D34F87;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    padding-bottom: 150px;
+
+}
+
+.blanco
+{
+    height: 280px;
+    background-color: #ffffff;
 }
 
 .principal .box
 {
     width:fit-content;
-
 }
 
 .titulo{
     margin: 0;
-    padding: 0;
+    padding: 50px 0 0 0;
     color: #ffffff;
     background-color: #D34F87;
     font-family: 'Lobster';
